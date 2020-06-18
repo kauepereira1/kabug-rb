@@ -23,3 +23,4 @@ bundle exec cucumber
 ### Executar no servidor de CI (gerando reposts JSON) 
 `
 bundle exec cucumber -p ci 
+`
