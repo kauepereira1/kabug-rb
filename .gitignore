@@ -1,1 +1,5 @@
-logs
+logs/screenshots
+logs/*.json
+logs/*.html
+
+
