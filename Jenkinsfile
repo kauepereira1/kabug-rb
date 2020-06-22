@@ -15,6 +15,7 @@ pipeline {
         stage('Test'){
             steps{
                 echo 'Running regression tests'
+                sh 'bundle exec cucumber -p ci'
             }
         }
         stage('UAT'){
@@ -23,7 +24,7 @@ pipeline {
                 input(message: 'Go to prodution?', ok: 'Yes')
             }
         }
-        stage('Prod'){
+        stage('Prod')
             steps{
                 echo 'WebApp in Ready :)'
             }
